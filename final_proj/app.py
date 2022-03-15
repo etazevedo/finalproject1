@@ -2,13 +2,11 @@ from flask import Flask, url_for, render_template, request, session, flash, redi
 from helper import open_image, image_to_text, rotateImage, binarize, noise_removal, getSkewAngle, deskew, write_deskew, display, display_text, create_pdf, create_document
 from datetime import timedelta
 from werkzeug.utils import secure_filename
-import pytesseract as tess
 import webbrowser
 import cv2
-from PIL import Image
 import requests
 import os
-import imutils
+
 
 app = Flask(__name__)
 app.secret_key = "hodor"
@@ -55,6 +53,7 @@ def urlupload():
 
 @app.route("/upload-image", methods=["GET", "POST"])
 def upload_image():
+
     if request.method == "POST":
         if request.files:
 
@@ -65,10 +64,10 @@ def upload_image():
                 return redirect(request.url)
 
             if image:
-                filename = secure_filename(image.filename)
+                #filename = secure_filename(image.filename)
                 #image.save(os.path.join(app.config["IMAGE_UPLOADS"], image.filename))
                 #img = open_image(filename)
-                textt = image_to_text(filename)
+                textt = image_to_text(image)
 
                 print("Image saved")
                 #return redirect(request.url)
@@ -114,7 +113,7 @@ def preprocessing():
     if request.method == "POST":
         if request.form["noise"]:
             image = os.path(app.config["IMAGE_UPLOADS"], image.filename)
-            noise_removal(cv2.imshow(os.path(app.config["IMAGE_UPLOADS"], image.filename)))
+            noise_removal(cv2.imshow(image))
         return webbrowser.open_new_tab('output.html')
 
     return render_template("preprocessing.html")
@@ -154,10 +153,6 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/output")
-# this has to be turned into a new tab that opens when there's an output
-def output():
-    return render_template("output.html")
 
 # conditional to run the app
 
