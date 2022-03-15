@@ -1,0 +1,35 @@
+appscript==1.2.0
+beautifulsoup4==4.10.0
+brotlipy @ file:///Users/runner/miniforge3/conda-bld/brotlipy_1636012303255/work
+certifi==2021.10.8
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1636046181956/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1644853463426/work
+click==8.0.4
+cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1639699339442/work
+docx2pdf==0.1.8
+Flask==2.0.3
+fpdf @ file:///home/conda/feedstock_root/build_artifacts/fpdf_1606859403225/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1642433548627/work
+itsdangerous==2.1.1
+Jinja2==3.0.3
+lxml==4.8.0
+MarkupSafe==2.1.0
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1646717293958/work
+opencv-python==4.5.5
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1637239678211/work
+pandas==1.4.1
+Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1645323194029/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1643496850550/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1642753572664/work
+PySocks @ file:///Users/runner/miniforge3/conda-bld/pysocks_1635862544510/work
+pytesseract @ file:///home/conda/feedstock_root/build_artifacts/pytesseract_1643232933150/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+python-docx==0.8.11
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1633452062248/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1641580202195/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+soupsieve==2.3.1
+tqdm==4.63.0
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1641584929973/work
+Werkzeug==2.0.3

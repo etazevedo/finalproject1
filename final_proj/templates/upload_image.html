@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="saved__container">
+    <h2>Extracted text:</h2>
+</div>
+
+
+<div class="container">
+{% if text %}
+        <h6>{{text}}</h6>
+{% endif %}
+</div>
+
+<div class="button__container">
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+        <button type="button" name= "download" onclick="create_document()" value= "Run Flask App" class="btn btn-secondary">Download</button>
+    </div>
+    </div>
+
+{% endblock %}
+

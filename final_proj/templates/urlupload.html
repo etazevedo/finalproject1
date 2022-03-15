@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+Silenus
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class = "col" >
+
+        <h2>Upload URL</h2>
+        <hr>
+
+            <form action="/urloutput" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label> Select URL</label>
+                    <div class="custom-file">
+                        <input type="url" class="custom-url-input" name="urlimage" id="urlimage" size="100">
+                        <label class="custom-url-label" for="urlimage"></label>
+                    </div>
+                </div>
+                <button type="submit" class = "btn btn-dark"> Upload Here </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

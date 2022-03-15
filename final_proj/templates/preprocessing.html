@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} Silenus {% endblock %}
+
+
+{% block content %}
+
+
+<body>
+
+<div class="image__container">
+
+
+    <image class="skewd_image" src="{{ url_for('static', filename='/images/skewed_image.jpeg')}}">
+    <image class="batalha_image" src="{{ url_for('static', filename='/images/a_batalha.png')}}">
+    <image class="noise_image" src="{{ url_for('static', filename='/images/noise_example.png')}}">
+
+</div>
+
+<div class="button__contain">
+    <div class="btn-group" role="group" aria-label="Basic example">
+
+         <button type="button" name="skewed" onclick="skewed()" value= "Run Flask App" class="btn btn-secondary">Deskew</button>
+
+         <button type="button" name="binarize" onclick="binarize()" value= "Run Flask App" class="btn btn-secondary">Binarize</button>
+
+         <button type="button" name="noise" onclick="noise_removal()" value= "Run Flask App" class="btn btn-secondary">Noise Removal</button>
+</div>
+</div>
+</body>
+
+
+
+{% endblock %}
+
+
