@@ -100,6 +100,7 @@ def urloutput():
         #imgcv = cv2.imwrite('test2.jpeg', img)
         #image = Image.open(img)
         text = image_to_text('image_name.jpg')
+        text = re.sub(u'[^\u0020-\uD7FF\u0009\u000A\u000D\uE000-\uFFFD\U00010000-\U0010FFFF]+', '', text)
         #display(image)
         #download = create_document(text)
 
