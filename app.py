@@ -9,6 +9,7 @@ import os
 import re
 
 
+
 app = Flask(__name__)
 app.secret_key = "hodor"
 app.permanent_session_lifetime = timedelta(days=5)
