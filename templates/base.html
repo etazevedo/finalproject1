@@ -18,35 +18,39 @@
         <li class="nav-item active">
         <a class="nav-link" href="/upload"> Image Upload <span class="sr-only">(current)</span></a>
         </li>
-            <li class="nav-item">
-        <a class="nav-link" href="/urlupload">URL Upload</a>
+            <li class="nav-item active">
+        <a class="nav-link" href="/urlupload">URL Upload <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/preprocessing">Preprocessing</a>
       </li>
+            </ul>
+      </div>
 
-
-        </div>
        <div class="login_logout d-flex flex-row">
+           <ul class="right__nav">
       <li class="nav-item">
-        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link-login" href="/login">Login</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="/logout">Logout</a>
+        <a class="nav-link-logout" href="/logout">Logout</a>
       </li>
+</ul>
 </div>
     </ul>
        </div>
-  </div>
 </nav>
-    {% block content%}
-
-    {% endblock %}
 
 <div class="footer">
     <footer>
     <p>Developed by Eunice Tudela de Azevedo [March 2022]</p>
     </footer>
     </div>
-    </body>
+
+    {% block content%}
+
+    {% endblock %}
+
+</body>
 </html>
+

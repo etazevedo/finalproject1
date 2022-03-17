@@ -1,5 +1,8 @@
-body{color:	#343a40;
-background-color: #eee;
+body{
+color: ##000000!important;
+background: rgb(184,171,171);
+
+
 }
 
 .login{
@@ -17,7 +20,13 @@ margin-top: 40px;
 }
 
 
-.main_image{height:500px;
+.main_image{height:450px;
+display:flex;
+flex-direction:row;
+justify-content:center;
+text-align: justify;
+position:absolute;
+margin-left: 30rem;
 }
 
 .index__title{
@@ -35,6 +44,8 @@ width:100%;
 flex-direction:column;
 justify-content:center;
 text-align: justify;
+position:absolute;
+margin-top: 475px;
 
 }
 
@@ -108,11 +119,29 @@ margin-bottom: 4rem;
 margin-top: 4rem;
 margin-right: 4rem;
 justify-content:right;
+background-color:##000000!important;
 }
 
+.right__nav{
+    margin: 0;
+    padding: 0;
+    align-items:center;
+    list-style: none;
+    display:flex;}
+
+.nav-link-login{
+margin-right:10px;
+color:white;
+padding:0;}
+
+.nav-link-logout   {
+margin-right:10px;
+color:white;
+padding:0;}    
 
 
-.footer{position:fixed;
+.footer{
+position:fixed;
 left: 0;
 bottom: 0;
 right: 0;
@@ -127,3 +156,18 @@ background: rgb(0 0 0 / 8%);
 font-size: 0.70rem;
 margin-top: auto;
 }
+
+.bg-dark{
+  background-color:##000000!important;
+}
+
+
+.logo_image{
+width:500px;}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #212529;
+    border-color: #6c757d;
+}
+
