@@ -9,7 +9,7 @@ background: rgb(184,171,171);
 display:flex;
 justify-content:center;
 text-align: center;
-background: #eee;
+background: rgb(184,171,171);
 margin-top: 100px;
 
 }
@@ -46,6 +46,7 @@ justify-content:center;
 text-align: justify;
 position:absolute;
 margin-top: 475px;
+margin-left: 16rem;
 
 }
 
@@ -67,7 +68,7 @@ margin-left: 50px;
 
 .image__container{
 display:flex;
-height:200px;
+height:425px;
 width:100%;
 flex-direction:row;
 margin-top: 4rem;
@@ -87,7 +88,7 @@ background-position: center;
 justify-content:center;
 }
 
-.saved__container{
+.saved__container{!important
 display:flex;
 flex-direction:row;
 gap: 50px 50px;
@@ -97,7 +98,7 @@ background-position: center;
 margin: auto;
 margin-bottom: 4rem;
 margin-top: 2rem;
-margin-left: 2rem;
+margin-left: 38rem;
 align-content: space-around;
 border:1rem;
 }
